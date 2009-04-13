@@ -10,9 +10,9 @@ require 'sinatra' unless defined?(Sinatra)
 
 configure do
   SiteConfig = OpenStruct.new(
-                 :title => 'Your Application Name',
+                 :title => 'PROGMATICA',
                  :author => 'Your Name',
-                 :url_base => 'http://localhost:4567/'
+                 :url_base => 'http://localhost:3004/'
                )
 
   DataMapper.setup(:default, "sqlite3:///#{File.expand_path(File.dirname(__FILE__))}/#{Sinatra::Base.environment}.db")
