@@ -1,5 +1,41 @@
-%h2 Main Page
-- Feed.delicious.entries.each do |f|
-  %p 
-    = f.title
+#posts.yui-g.above-fold
+  .yui-u.first.main-column
+    #post_1.article.hentry 
+      %h3.entry-title Nam facilisis urna sed purus luctus congue.
+      %p Donec vehicula pretium nunc. Suspendisse potenti. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Phasellus accumsan ultrices ante. Pellentesque tellus purus, feugiat vitae, tincidunt ac, pulvinar at, nunc. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
+  .yui-g.feed-column
+    .yui-u.first
+      .column-heading
+        %h2 The Bleeps, <br />The Sweeps, <br />and The Creeps
+        %p ... from the blogs of Roboticators.
+      - Feed.blogged.entries.each do |k,f| 
+        - f.entries.each do |e| 
+          %p 
+            = e.title
+    .yui-u
+      .column-heading
+        %h2 These are the machines that go "BING..."
+        %p .. linked, snipped, or otherwise interwebbed by Roboticators and other appliances.
+      - Feed.linked  .entries.each do |k,f| 
+        - f.entries.each do |e| 
+          %p 
+            = e.title
+.yui-g.aboutabot
+  %h2 About the Robots
+  %p Tales of buckled swashes and dashing-daring-fu.  <a href="http://flickr.com/photos/dancoulter/21042744/" title="Robot Attack! on Flickr - Photo Sharing!">Robot Attack!</a>
+.yui-g.below-fold
+  .yui-g.first
+    .yui-u.first
+      %h3 Mr. Roboto
+      %p <img class="bio-headshot" src="/images/robots/robot1.png" width="140" height="110" alt="Robot1 1" />Cras sit amet sapien. Praesent varius ultrices ante. Donec laoreet imperdiet lacus. Nulla neque nulla, tincidunt at, ultricies mollis, porttitor vel, lectus. Sed et elit quis neque posuere pellentesque. Mauris nisi. Mauris ultrices consectetuer quam. Donec porttitor scelerisque orci. Suspendisse egestas massa eget tortor. Nullam suscipit libero quis felis. Morbi vitae tellus id nibh facilisis commodo.
+    .yui-u
+      %h3 El Roboton
+      %p <img class="bio-headshot" src="/images/robots/robot2.png" width="140" height="110" alt="Robot1 1" />Cras sit amet sapien. Praesent varius ultrices ante. Donec laoreet imperdiet lacus. Nulla neque nulla, tincidunt at, ultricies mollis, porttitor vel, lectus. Sed et elit quis neque posuere pellentesque. Mauris nisi. Mauris ultrices consectetuer quam. Donec porttitor scelerisque orci. Suspendisse egestas massa eget tortor. Nullam suscipit libero quis felis. Morbi vitae tellus id nibh facilisis commodo.
+  .yui-g
+    .yui-u.first
+      %h3 Robotus en Veritas
+      %p <img class="bio-headshot" src="/images/robots/robot3.png" width="140" height="110" alt="Robot1 1" />Cras sit amet sapien. Praesent varius ultrices ante. Donec laoreet imperdiet lacus. Nulla neque nulla, tincidunt at, ultricies mollis, porttitor vel, lectus. Sed et elit quis neque posuere pellentesque. Mauris nisi. Mauris ultrices consectetuer quam. Donec porttitor scelerisque orci. Suspendisse egestas massa eget tortor. Nullam suscipit libero quis felis. Morbi vitae tellus id nibh facilisis commodo.
+    .yui-u
+      %h4 Contact-a-bot
+      %p
 

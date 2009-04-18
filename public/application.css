@@ -1,0 +1,559 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+*:active, *:focus {
+  outline: none;
+}
+
+body {
+  text-align: center;
+  font-family: Lucida Grande, Arial, Tahoma, sans-serif;
+  font-size: 16px;
+  color: #2a2a2a;
+  padding-bottom: 20px;
+}
+
+.left { float: left; }
+.right { float: right; }
+
+.flash {
+  width: 99%;
+  padding: 0.4em;
+  color: white;
+  cursor: pointer;
+}
+
+.flash.notice {
+  background: #0af;
+}
+
+.flash.error {
+  background: #FF1100;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  margin: 0.5em 0;
+}
+
+ul, ol {
+  font-size: 12px;
+}
+
+p {
+  margin: 1em 0;
+  font-size: 14px;
+  line-height: 1.7em;
+}
+
+a {
+  color: #0af;
+  text-decoration: none;
+  padding: 0.1em 0.2em;
+}
+
+a:hover {
+  background: black;
+  color: white;
+}
+
+a.active {
+  text-decoration: underline;
+}
+
+small a:hover {
+  background: #202020;
+  text-shadow: 1px 1px 1px #171717;
+}
+
+small a:active {
+  text-shadow: none;
+}
+
+cite a:hover, .meta a:hover {
+  text-shadow: 1px 1px 1px #171717;
+}
+
+cite a:active, .meta a:active {
+  text-shadow: none;
+}
+
+label {
+  display: block;
+  font-size: 12px;
+  width: 400px;
+  margin: 1em 0;
+}
+
+label input {
+  width: 100%;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+label textarea {
+  width: 100%;
+  font-size: 12px;
+  padding: 0.2em;
+  font-family: Monaco, Courier, monospace;
+}
+
+#all {
+  text-align: left;
+  margin: 0 auto;
+  width: 500px;
+  padding: 0 0 2em;
+}
+
+#credits {
+  color: #c0c0c0;
+  float: left;
+  margin: 20px 0;
+  text-align: center;
+  display: block;
+}
+
+/*------------------------------------------------------------
+  Form validator styles */
+
+.err {
+  outline: 1px solid #f00;
+}
+
+/*------------------------------------------------------------
+  Header styles */
+
+#header {
+  margin: 0 0 1em 0;
+}
+
+#header h1 {
+  font-size: 40px;
+  font-family: Georgia, Times, serif;
+  margin-bottom: 0;
+  text-shadow: 1px 1px 1px #ccc;
+}
+
+#header h1 a {
+  color: #0af;
+  padding: 0;
+}
+
+#header h1 a:hover {
+  background: white;
+  text-decoration: underline;
+}
+
+#header h1 a:hover span {
+  color: black;
+}
+
+#header h1 a span {
+  color: #202020;
+}
+
+#header h2 {
+  font-size: 18px;
+  font-family: Georgia, Times, serif;
+  font-weight: normal;
+}
+
+/*------------------------------------------------------------
+  Footer styles */
+
+#footer {
+  clear: both;
+}
+
+/*------------------------------------------------------------
+  General Post styles */
+
+#posts > div {
+  border-top: 1px solid #dfdfdf;
+  clear: both;
+}
+
+.date {
+  float: left;
+  width: 55px;
+  color: #373737;
+  margin-left: -76px;
+  font-size: 20px;
+  font-weight: bold;
+  text-align: center;
+  background: #efefef;
+  padding: 0.2em 0;
+  text-shadow: 1px 1px 1px #c0c0c0;
+}
+
+.date .month {
+  display: block;
+}
+
+#posts div h3.entry-title {
+  margin-top: 0;
+  font-size: 26px;
+  text-shadow: 1px 1px 1px #ccc;
+}
+
+#posts div h3.entry-title a {
+  color: #0af;
+  padding-left: 0;
+}
+
+#posts div h3.entry-title a:hover {
+  background: white;
+  text-decoration: underline;
+}
+
+#posts div h3.entry-title a span {
+  color: #202020;
+}
+
+.pagination {
+  font-size: 12px;
+}
+
+.pagination > * {
+  margin-right: 0.3em;
+  padding: 0.3em 0.5em;
+}
+
+.pagination a:hover {
+  background: #202020;
+  text-shadow: 1px 1px 1px #171717;
+}
+
+.pagination a:active {
+  text-shadow: none;
+}
+
+.pagination .current {
+  background: #202020;
+  color: white;
+  text-shadow: 1px 1px 1px #171717;
+}
+
+.pagination .disabled {
+  color: #c0c0c0;
+}
+
+/*------------------------------------------------------------
+  Article styles */
+  
+.article {
+  padding: 1em 0;
+}
+
+.article .meta {
+  font-size: 12px;
+  text-align: right;
+}
+
+.article .date {
+  margin-top: 0.3em;
+}
+
+.article cite {
+  display: block;
+  text-align: right;
+  font-style: normal;
+  font-size: 12px;
+}
+
+/*------------------------------------------------------------
+  Snippet styles */
+  
+.snippet {
+  padding: 1em 0;
+}
+
+.snippet .meta {
+  font-size: 12px;
+  text-align: right;
+  margin-top: 1em;
+}
+
+.snippet cite {
+  display: block;
+  text-align: right;
+  font-style: normal;
+  font-size: 12px;
+}
+
+.snippet pre {
+  font-family: Courier, monospace;
+  font-size: 12px;
+  line-height: 1.3em;
+  background: #fdfdfd;
+  padding: 0.3em 0.7em;
+  overflow-x: auto;
+  border: 1px solid #ddd;
+  border-left: 1px solid #e0e0e0;
+  border-right: 1px solid #e0e0e0;
+  border-bottom: 1px solid #dfdfdf;
+}
+
+/* These get a bit tricky */
+
+.snippet pre .Keyword {
+  font-weight: bold;
+}
+
+.snippet pre .FunctionName {
+  font-weight: bold;
+  color: #08c;
+}
+
+.snippet pre .String {
+  color: #f15;
+  font-weight: normal;
+}
+
+.snippet pre .Special {
+  font-weight: bold;
+  color: #0af;
+}
+
+.snippet pre .String * {
+  font-weight: normal;
+}
+
+.snippet pre .String .StringInterpolation {
+  color: #373737;
+}
+
+.snippet pre .String .StringInterpolation .StringInterpolation {
+  color: #f15;
+}
+
+.snippet pre .String .StringInterpolation .StringInterpolation * {
+  color: #373737;
+}
+
+.snippet pre .Comment {
+  color: #9f9f9f;
+}
+
+.snippet pre .Number {
+  color: #0af;
+}
+
+.snippet pre .UserDefinedConstant {
+  color: #379;
+}
+
+/*------------------------------------------------------------
+  Quote styles */
+
+.quote {
+  padding: 1.6em 0;
+}
+
+.quote blockquote {
+  background: transparent url(/images/quote.png) no-repeat;
+  font-size: 20px;
+  font-style: oblique;
+  font-weight: bold;
+  font-family: Georgia, Times, serif;
+  padding: 0 1em 0 2.3em;
+  margin-bottom: 0.5em;
+  min-height: 36px;
+}
+
+.quote cite {
+  display: block;
+  text-align: right;
+  font-style: normal;
+  font-size: 12px;
+}
+
+.quote blockquote a {
+  color: #373737;
+  padding: 0;
+}
+
+.quote blockquote a:hover {
+  text-decoration: underline;
+  background: white;
+}
+
+.quote blockquote a span {
+  color: #0af;
+}
+
+.quote .date {
+  margin-top: 0;
+}
+
+/*------------------------------------------------------------
+  Tweet styles */
+
+.tweet {
+  padding: 1.4em 0;
+}
+
+.tweet blockquote {
+  background: transparent url(/images/tweet.png) no-repeat;
+  font-size: 20px;
+  font-style: oblique;
+  font-weight: bold;
+  font-family: Georgia, Times, serif;
+  padding: 0 1em 0 2.3em;
+  margin-bottom: 0.5em;
+}
+
+.tweet cite {
+  display: block;
+  text-align: right;
+  font-style: normal;
+  font-size: 12px;
+}
+
+.tweet blockquote a {
+  color: #373737;
+  padding: 0;
+}
+
+.tweet blockquote a:hover {
+  text-decoration: underline;
+  background: white;
+}
+
+.tweet blockquote a span {
+  color: #0af;
+}
+
+.tweet .date {
+  margin-top: 0;
+}
+
+/*------------------------------------------------------------
+  Link styles */
+
+.link {
+  padding: 1.4em 0;
+}
+
+.link blockquote {
+  background: transparent url(/images/link.png) no-repeat 0 0.25em;
+  font-size: 22px;
+  font-style: oblique;
+  font-weight: bold;
+  font-family: Georgia, Times, serif;
+  margin-bottom: 0.5em;
+  padding: 0 1em 0 2.2em;
+  min-height: 2em;
+}
+
+.link p {
+  padding: 0 1em 0 0.2em;
+}
+
+.link cite {
+  display: block;
+  text-align: right;
+  font-style: normal;
+  font-size: 12px;
+}
+
+.link blockquote p {
+  font-family: Lucida Grande, Tahoma, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+}
+
+.link blockquote a {
+  color: #373737;
+  padding: 0;
+}
+
+.link blockquote a:hover {
+  text-decoration: underline;
+  background: white;
+}
+
+.link blockquote a span {
+  color: #0af;
+}
+
+.link .date {
+  margin-top: 0.3em;
+}
+
+/*------------------------------------------------------------
+  Picture styles */
+
+.picture {
+  padding: 1.4em 0;
+}
+
+.picture img {
+  margin: 6px 0 0.5em;
+}
+
+.picture cite {
+  display: block;
+  text-align: right;
+  font-style: normal;
+  font-size: 12px;
+}
+
+.picture small {
+  display: block;
+}
+
+.picture .date {
+  margin-top: 0.3em;
+}
+
+/*------------------------------------------------------------
+  Quote Form styles */
+
+#quote textarea {
+  height: 100px;
+}
+
+
+/*------------------------------------------------------------
+  Gist styles */
+
+.gist {
+  padding: 1.4em 0;
+}
+
+.gist blockquote {
+  background: transparent url(/images/gist.png) no-repeat;
+  font-size: 16px;
+  font-weight: bold;
+  font-family: Georgia, Times, serif;
+  padding: 0 1em 0 2.3em;
+  margin-bottom: 0.5em;
+  min-height: 50px;
+}
+
+.gist cite {
+  display: block;
+  text-align: right;
+  font-style: normal;
+  font-size: 12px;
+}
+
+.gist blockquote a {
+  color: #373737;
+  padding: 0;
+}
+
+.gist blockquote a:hover {
+  text-decoration: underline;
+  background: white;
+}
+
+.gist blockquote a span {
+  color: #0af;
+}
+
+.gist .date {
+  margin-top: 0;
+}

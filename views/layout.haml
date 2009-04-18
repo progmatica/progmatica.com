@@ -2,13 +2,18 @@
 %html
   %head
     %title Progmatica
-    %link{:href => '/main.css', :rel => 'stylesheet', :type => 'text/css'}
+    %link{:href => 'http://yui.yahooapis.com/2.7.0/build/grids/grids-min.css', :rel => 'stylesheet', :type => 'text/css'}
+    / %link{:href => '/main.css', :rel => 'stylesheet', :type => 'text/css'}
+    /%link{:href => '/all.css', :rel => 'stylesheet', :type => 'text/css'}
+    %link{:href => '/application.css', :rel => 'stylesheet', :type => 'text/css'}
+    %link{:href => '/aintagrid.css', :rel => 'stylesheet', :type => 'text/css'}
+        
   %body
-    #container
-      #header
-        #logo
-          %h1
-            %a{:href => '/'}= SiteConfig.title
-      #content= yield
+    #doc4.yui-t7
+      #hd.header
+        %h1
+          %a{:href => '/'}= SiteConfig.title
+        %h2 I Progmatica, therefore I am?
+      #bd= yield
       #footer
-        %p#legal= "&mdash; &copy; #{Time.now.strftime('%Y')} #{SiteConfig.author} &mdash;"
+        %p.byline Maybe if you was to flip it on 45 so I could dance to it.

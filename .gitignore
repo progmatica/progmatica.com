@@ -3,3 +3,4 @@ tmp/**/*
 db/schema.rb
 config/database.yml
 **~
+.DS_Store

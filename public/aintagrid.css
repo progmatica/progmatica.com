@@ -1,0 +1,77 @@
+#posts > div {
+  border-top: 1px solid #dfdfdf;
+  clear: none;
+}
+
+/*------------------------------------------------------------
+  Header styles */
+
+/* ... copied from application.css and changed to class references instead of id's*/
+
+.header {
+  margin: 0 0 1em 0;
+}
+
+.header h1 {
+  font-size: 40px;
+  font-family: Georgia, Times, serif;
+  margin-bottom: 0;
+  text-shadow: 1px 1px 1px #ccc;
+}
+
+.header h1 a {
+  color: #0af;
+  padding: 0;
+}
+
+.header h1 a:hover {
+  background: white;
+  text-decoration: underline;
+}
+
+.header h1 a:hover span {
+  color: black;
+}
+
+.header h1 a span {
+  color: #202020;
+}
+
+.header h2 {
+  font-size: 18px;
+  font-family: Georgia, Times, serif;
+  font-weight: normal;
+}
+
+.column-heading {background: #DAECFF; padding: 1em; min-height: 200px;}
+
+/*------------------------------------------------------------
+ Above the fold */
+
+.feed-column h2 {font-size: 1.6em;}
+.feed-column h3.entry-title a span {font-size: .7em; line-height: 1.2em;}
+.feed-column h3.entry-title a  {padding: 0;}
+.feed-column .link blockquote a span {font-size: 16px;}
+
+.date {display:none;}
+.link blockquote {padding: 0; background: none;}
+
+
+/*------------------------------------------------------------
+ About banner */
+
+.aboutabot { background: #DAECFF; border-bottom: 1px solid #dfdfdf; padding: 1em; margin-top:1em;}
+
+.aboutabot h2 { font-size: 1.5em; }
+img.bio-headshot {height: 80; width: 100; float: left; margin: 0 .5em .5em 0; border: 1px solid #000000;}
+
+/*------------------------------------------------------------
+ Below the fold */
+
+.below-fold h3 {font-size: 1.2em;}
+
+/*------------------------------------------------------------
+ Below the fold */
+
+.byline {font-size: .5em; font-style: italic; text-align: center; border-top: 1px solid #999; margin: 3em 0 0 0;}
+
